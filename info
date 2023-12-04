@@ -1,0 +1,62 @@
+/*
+ 
+ // Object Oriented Programming
+ 
+ // During the life of the app, we create and destroy objects
+ // Create = Initialize (init) = Allocate (add to memory)
+ // Destroy = Deinitialize (deinit) Deallocate (remove from memory)
+ 
+ // Automatic Reference Counting (ARC)
+ // A live track of strong references to object in memory.
+ // We want to keep ARC count as low as possible
+ // And destroy them as soon as we no longer need them
+ 
+ // For example, if an app has 2 screens and user is moving from screen 1 to screen 2. We only want to allocate screen 2 WHEN we need it (ie. when the user clicks a button to segue to screen 2). When we get to screen 2, we may want to deallocate screen 1.
+ 
+ 
+ // There are 2 types of Memory
+ // Stack & Heap
+ // Only objects in the Heap are counted towards ARC
+ 
+ 
+ 
+ // Objects in the Stack
+ // String, Int, Bool most basic types
+ // Struct, Enum
+ 
+ 
+ // Objects in the Heap
+ // Functions
+ // Class, Actors
+ 
+ 
+ 
+ // Iphone is a "multi-threaded environment"
+ // There are multiple "threads" or "engines" running simontaneously
+ // Each threads has a Stack
+ // But there is on;y 1 Heap for all threads
+ 
+ // Therefore:
+ // Stack if faster, lower memory footprint, preferable
+ // Heap is slower, higher memory footprint, risk of threading issues
+ 
+ 
+ // Value vs Reference types
+ // Objects in the Stack are "Value types"
+ // When you edit a Value type, you create a copy og it with new data. And replace old copy with a new one.
+ 
+ // Objects in the Hear are "Reference" types.
+ //When you edit a Reference type, you edit objects that you are referencing. This "reference" is called "pointer" because it "points" to an object in the Heap (in memory).
+ 
+ 
+ 
+ // We want to use a class for things like:
+ // "Manager" "DataService", "Service", "Factory", "ViewModel"
+ // Objects that we create abd want to perform actions inside.
+ 
+ // We want to use a struct for things like:
+ // Data models
+ // Objects that we create and pass around our app.
+ 
+ 
+ */
