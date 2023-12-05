@@ -22,7 +22,7 @@
  
  // Objects in the Stack
  // String, Int, Bool most basic types
- // Struct, Enum
+ // Struct, Enum, Array
  
  
  // Objects in the Heap
